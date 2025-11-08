@@ -1,0 +1,10 @@
+[project]
+name = "automation-workshop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "py-trees>=2.3.0",
+    "ultralytics>=8.3.225",
+]

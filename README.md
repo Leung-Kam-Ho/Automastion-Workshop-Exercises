@@ -13,8 +13,8 @@ This repository serves as an educational resource for learning different approac
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/Leung-Kam-Ho/Automation-Workshop.git
-cd automation-workshop
+git clone https://github.com/Leung-Kam-Ho/Automastion-Workshop-Exercises.git
+cd automation-workshop-exercises
 
 # Install dependencies
 uv sync

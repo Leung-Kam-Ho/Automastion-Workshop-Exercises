@@ -6,13 +6,16 @@ This repository serves as an educational resource for learning different approac
 
 ### 1. Script-Based Automation
 
-
-
 Learn the fundamentals of automation through direct scripting. This approach involves writing sequential commands to control game actions.
 
 **Key Files:**
 - `Script_Based_Auto.py` - Demonstrates basic script-based automation with movement sequences
 - `Minecraft_Tool/minecraft_override_config.py` - Client library for sending commands to Minecraft
+
+**Challenges:**
+- Implement additional movement patterns
+- The arena environment is fixed
+- Use script based logic to walk through the Gate and reach the target area in a specific path
 
 ### 2. Behaviour Tree Based Automation
 Advance to more sophisticated automation using behaviour trees. This approach provides better structure and modularity for complex decision-making processes.
@@ -21,9 +24,15 @@ https://github.com/user-attachments/assets/a52e6e98-5778-4f9f-8694-226901665de7
 
 **Key Files:**
 - `BehaviourTree_Based_Auto.py` - Demonstrates behaviour tree-based automation
+  
+**Challenges:**
+- Implement additional action nodes and composite nodes
+- The arena environment is fixed
+- Use Behaviour Tree based logic to walk through the Gate and reach the target area in a specific path
 
 **Dependencies:**
-- `py-trees` - Python library for implementing behaviour trees
+- `py-trees` - For behaviour tree logic
+
 
 ### 3. YOLO + Behaviour Tree Automation
 Combine computer vision with behaviour trees for intelligent automation. Use YOLO (You Only Look Once) object detection to perceive the game environment and make decisions accordingly.
@@ -32,6 +41,12 @@ https://github.com/user-attachments/assets/08648b6e-d58c-47cc-821f-c0e940ea29cf
 
 **Key Files:**
 - `YOLO_BehaviourTree_Based_Auto.py` - Demonstrates YOLO + behaviour tree automation
+
+**Challenges:**
+- Integrate YOLO object detection into the behaviour tree
+- Implement additional action nodes and composite nodes
+- The arena environment may vary, requiring dynamic decision-making
+- Use YOLO + Behaviour Tree based logic to walk through the Gate and reach the target area
 
 **Dependencies:**
 - `ultralytics` - YOLO implementation for object detection

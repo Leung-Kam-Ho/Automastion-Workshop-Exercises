@@ -1,6 +1,6 @@
 # Automation Workshop
 
-This repository serves as an educational resource for learning different approaches to automation, using Minecraft as a practical example. The Minecraft world simulates the SAUVC competition pool setup, providing a safe and accessible environment for testing automation algorithms. The workshop covers three progressive levels of automation complexity:
+This repository serves as an educational resource for learning different approaches to automation, using Minecraft as a practical example. The Minecraft world simulates the SAUVC competition pool setup, providing a safe and accessible environment for testing automation algorithms. The Answer to this workshop can be found ![here](https://github.com/Leung-Kam-Ho/Automation-Workshop) with limited access. The workshop covers three progressive levels of automation complexity:
 
 ## Workshop Levels
 

@@ -13,9 +13,9 @@ Learn the fundamentals of automation through direct scripting. This approach inv
 - `Minecraft_Tool/minecraft_override_config.py` - Client library for sending commands to Minecraft
 
 **Challenges:**
-- Implement additional movement patterns
-- The arena environment is fixed
-- Use script based logic to walk through the Gate and reach the target area in a specific path
+- **Implement additional movement patterns**
+- **The arena environment is fixed**
+- **Use script based logic to walk through the Gate and reach the target area in a specific path**
 
 ### 2. Behaviour Tree Based Automation
 Advance to more sophisticated automation using behaviour trees. This approach provides better structure and modularity for complex decision-making processes.
@@ -26,9 +26,9 @@ https://github.com/user-attachments/assets/a52e6e98-5778-4f9f-8694-226901665de7
 - `BehaviourTree_Based_Auto.py` - Demonstrates behaviour tree-based automation
   
 **Challenges:**
-- Implement additional action nodes and composite nodes
-- The arena environment is fixed
-- Use Behaviour Tree based logic to walk through the Gate and reach the target area in a specific path
+- **Implement additional action nodes and composite nodes**
+- **The arena environment is fixed**
+- **Use Behaviour Tree based logic to walk through the Gate and reach the target area in a specific path**
 
 **Dependencies:**
 - `py-trees` - For behaviour tree logic
@@ -43,10 +43,10 @@ https://github.com/user-attachments/assets/08648b6e-d58c-47cc-821f-c0e940ea29cf
 - `YOLO_BehaviourTree_Based_Auto.py` - Demonstrates YOLO + behaviour tree automation
 
 **Challenges:**
-- Integrate YOLO object detection into the behaviour tree
-- Implement additional action nodes and composite nodes
-- The arena environment may vary, requiring dynamic decision-making
-- Use YOLO + Behaviour Tree based logic to walk through the Gate, go to the blue pail (bucket), and hit all 3 colored poles in the target area
+- **Integrate YOLO object detection into the behaviour tree**
+- **Implement additional action nodes and composite nodes**
+- **The arena environment may vary, requiring dynamic decision-making**
+- **Use YOLO + Behaviour Tree based logic to walk through the Gate, go to the blue pail (bucket), and hit all 3 colored poles in the target area**
 
 **Dependencies:**
 - `ultralytics` - YOLO implementation for object detection

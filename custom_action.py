@@ -134,5 +134,26 @@ class Stop(py_trees.behaviour.Behaviour):
 
 # 3. Create a MoveBackward behaviour
 
+class Yaw(py_trees.behaviour.Behaviour):
+    def __init__(self, node : MinecraftOverrideConfig, yaw : float):
+        super().__init__("Yaw")
+        self.node = node
+        self.yaw = yaw
+        self._done = False
 
-# 4. Create a Setpoint (Rotate to xx degrees) behaviour
+    def initialise(self):
+        self.node.setpoint(self.yaw)
+        self._done = False
+        self._start_time = time()
+
+    def update(self):
+        if not self._done:
+            if time() - self._start_time >= 1:
+                self._done = True
+                return py_trees.common.Status.SUCCESS
+            else:
+                return py_trees.common.Status.RUNNING
+        return py_trees.common.Status.SUCCESS
+
+
+# 4. Create a MoveBasedOnDetection behaviour

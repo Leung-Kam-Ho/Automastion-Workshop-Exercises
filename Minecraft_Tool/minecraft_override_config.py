@@ -1,11 +1,16 @@
 import requests
 from time import time, sleep
 from geometry_msgs.msg import Twist
+import configparser
 
 class MinecraftOverrideConfig:
     def __init__(self, override: bool = False):
         self.minecraft_override = override
-        self.minecraft_server_url = "http://lablab.local:25565"  # Example URL
+        self.cfg_file_name = "user.cfg"
+        self.user_cfg_section = "server_config"
+        config = configparser.ConfigParser()
+        config.read(self.cfg_file_name)
+        self.minecraft_server_url = config.get(self.user_cfg_section, "minecraft_server_url")
         self.last_output = Twist()
 
     def init_world(self):
@@ -78,42 +83,4 @@ class MinecraftOverrideConfig:
 
 # Workshop part 1 - Script-based automation
 if __name__ == "__main__":
-    sleep(2)  # wait for minecraft server to start
     moc = MinecraftOverrideConfig(override=True)
-    
-    def send_command(linear_x=0.0, linear_y=0.0, angular_z=0.0, name=""):
-        test_twist = Twist()
-        test_twist.linear.x = linear_x
-        test_twist.linear.y = linear_y
-        test_twist.angular.z = angular_z
-        if name:
-            print(f"Sending {name} command")
-        moc.send_twist_message(test_twist)
-    
-    def execute_sequence(actions):
-        for action, duration in actions:
-            action()
-            sleep(duration)
-
-    while True:
-        execute_sequence([
-            (moc.init_world, 2),
-            (lambda: moc.switch_camera(front=False), 1),
-            (lambda: moc.switch_camera(front=True), 1),
-            (lambda: send_command(linear_x=1.0, name="forward"), 10),
-            (lambda: send_command(name="stop"), 1),
-            (lambda: send_command(linear_y=1.0, name="left"), 6),
-            (lambda: send_command(name="stop"), 1),
-            (lambda: send_command(linear_x=1.0, name="forward"), 20),
-            (lambda: send_command(name="stop"), 1),
-            (lambda: moc.switch_camera(front=False), 1),
-            (lambda: send_command(linear_x=1.0, name="forward"), 1),
-            (lambda: send_command(name="stop"), 1),
-            (lambda: moc.switch_camera(front=True), 1),
-            (lambda: send_command(name="stop"), 1),
-            (lambda: send_command(linear_x=-1.0, name="backward"), 5),
-            (lambda: send_command(name="stop"), 1),
-            (lambda: moc.setpoint(-90), 1),
-            (lambda: send_command(linear_x=1.0, linear_y=-1.0, name="right+forward"), 6),
-            (lambda: send_command(name="stop"), 1),
-        ])

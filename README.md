@@ -66,6 +66,8 @@ Learn the fundamentals of automation through direct scripting. This approach inv
 ### 2. Behaviour Tree Based Automation
 Advance to more sophisticated automation using behaviour trees. This approach provides better structure and modularity for complex decision-making processes.
 
+<img width="1906" height="155" alt="behavior_tree_based" src="https://github.com/user-attachments/assets/712eacd5-9d22-4dc0-a07d-48408144eced" />
+
 https://github.com/user-attachments/assets/a52e6e98-5778-4f9f-8694-226901665de7
 
 **Key Files:**

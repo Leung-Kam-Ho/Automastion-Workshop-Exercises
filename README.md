@@ -65,7 +65,8 @@ Advance to more sophisticated automation using behaviour trees. This approach pr
 
 ***Minecraft Environment for this level:***
 
-https://github.com/user-attachments/assets/95f5334a-2764-4df0-9867-4677f162c2c7
+https://github.com/user-attachments/assets/97940003-0a4a-4ccc-9501-094fe3015cd2
+
 
 ***SAUVC 2025 Qualification Round Footage:***
 

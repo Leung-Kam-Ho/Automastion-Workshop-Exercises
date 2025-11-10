@@ -21,21 +21,14 @@ uv sync
 ```
 
 ### Minecraft Server Setup
-The project communicates with a local Minecraft server running on port 25565. The server simulates ROS-like control by translating commands into keyboard inputs for Minecraft. Download the CurseForge modpack [here]() and load it into your Minecraft server.
+The project communicates with a local Minecraft server running on port 25565. The server simulates ROS-like control by translating commands into keyboard inputs for Minecraft. The CurseForge modpack will be ready later this year to facilitate the setup. ***Right now, the server and the modpack will only be available to participants of the workshop.***
 
-**To run the Minecraft command server:**
-```bash
-uv run python Minecraft_Tool/minecraft_command_server.py
-```
 
 ![Minecraft Virtual Environment](Media/Minecraft_Screenshoot.png)
 
 ## Getting Started
 
 1. **Start the Minecraft Command Server:**
-   ```bash
-   uv run python Minecraft_Tool/minecraft_command_server.py
-   ```
 
 2. **Run Script-Based Automation:**
    ```bash

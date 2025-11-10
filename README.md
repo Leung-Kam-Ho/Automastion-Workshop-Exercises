@@ -83,7 +83,9 @@ https://github.com/user-attachments/assets/a52e6e98-5778-4f9f-8694-226901665de7
 ### 3. YOLO + Behaviour Tree Automation
 Combine computer vision with behaviour trees for intelligent automation. Use YOLO (You Only Look Once) object detection to perceive the game environment and make decisions accordingly.
 
-https://github.com/user-attachments/assets/08648b6e-d58c-47cc-821f-c0e940ea29cf
+
+https://github.com/user-attachments/assets/31a0e1be-5e8b-4d7f-99fe-687d278e4884
+
 
 **Key Files:**
 - `YOLO_BehaviourTree_Based_Auto.py` - Demonstrates YOLO + behaviour tree automation

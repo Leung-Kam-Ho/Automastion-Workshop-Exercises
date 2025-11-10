@@ -2,10 +2,16 @@
 
 import requests
 from pprint import pprint
+import configparser
 
 
 def get_detection_info():
-    response = requests.get("http://lablab.local:4001/detection_info")
+    cfg_file_name = "user.cfg"
+    user_cfg_section = "yolo_config"
+    config = configparser.ConfigParser()
+    config.read(cfg_file_name)
+    yolo_url = config.get(user_cfg_section, "yolo_url")
+    response = requests.get(yolo_url)
     if response.status_code == 200:
         return response.json()
     else:

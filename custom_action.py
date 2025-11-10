@@ -2,6 +2,7 @@ from time import time
 from geometry_msgs.msg import Twist
 import py_trees
 from Minecraft_Tool.minecraft_override_config import MinecraftOverrideConfig
+from YOLO_Tool.get_detect_info import get_detection_info
 
 
 class InitWorld(py_trees.behaviour.Behaviour):
@@ -155,5 +156,26 @@ class Yaw(py_trees.behaviour.Behaviour):
                 return py_trees.common.Status.RUNNING
         return py_trees.common.Status.SUCCESS
 
+# YOLO Detection Related Behaviours
+
+class DetecedObject(py_trees.behaviour.Behaviour):
+    def __init__(self, target_class: str, conf_threshold: float = 0.5):
+        super().__init__("DetectedObject")
+        self.target_class = target_class
+        self.conf_threshold = conf_threshold
+
+    def update(self):
+        detection_info = get_detection_info()
+        if detection_info:
+            classes = detection_info.get("classes", [])
+            scores = detection_info.get("confidences", [])
+
+            for cls, score in zip(classes, scores):
+                if cls == self.target_class and score >= self.conf_threshold:
+                    self.feedback_message = f"Detected {cls} with confidence {score:.2f}"
+                    return py_trees.common.Status.SUCCESS
+
+        self.feedback_message = f"{self.target_class} not detected or confidence too low."
+        return py_trees.common.Status.FAILURE
 
 # 4. Create a MoveBasedOnDetection behaviour

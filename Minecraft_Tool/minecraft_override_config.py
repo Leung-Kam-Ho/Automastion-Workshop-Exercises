@@ -1,6 +1,6 @@
 import requests
 from time import time, sleep
-from geometry_msgs.msg import Twist
+from geometry_msgs.msg import Twist  # if you are not using ROS, you can comment this line out and create a mock Twist class
 import configparser
 
 class MinecraftOverrideConfig:

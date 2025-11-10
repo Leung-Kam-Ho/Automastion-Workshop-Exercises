@@ -1,5 +1,5 @@
 from time import time
-from geometry_msgs.msg import Twist
+from geometry_msgs.msg import Twist  # if you are not using ROS, you can comment this line out and create a mock Twist class
 import py_trees
 from Minecraft_Tool.minecraft_override_config import MinecraftOverrideConfig
 from YOLO_Tool.get_detect_info import get_detection_info

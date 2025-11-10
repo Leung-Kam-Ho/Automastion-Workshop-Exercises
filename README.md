@@ -59,15 +59,15 @@ Learn the fundamentals of automation through direct scripting. This approach inv
 ### 2. Behaviour Tree Based Automation (SAUVC Qualification Round)
 Advance to more sophisticated automation using behaviour trees. This approach provides better structure and modularity for complex decision-making processes.
 
-Behaviour Tree for this level:
+***Behaviour Tree for this level:***
 
 <img width="576" height="155" alt="behavior_tree_based" src="https://github.com/user-attachments/assets/db6adc3d-1165-46dc-8b4d-691dbd428b95" />
 
-Minecraft Environment for this level:
+***Minecraft Environment for this level:***
 
 https://github.com/user-attachments/assets/95f5334a-2764-4df0-9867-4677f162c2c7
 
-SAUVC 2025 Qualification Round Footage:
+***SAUVC 2025 Qualification Round Footage:***
 
 https://github.com/user-attachments/assets/66ffdf3e-b37d-47a9-95f1-b71e3dbc51e9
 
@@ -88,18 +88,18 @@ https://github.com/user-attachments/assets/66ffdf3e-b37d-47a9-95f1-b71e3dbc51e9
 ### 3. YOLO + Behaviour Tree Automation
 Combine computer vision with behaviour trees for intelligent automation. Use YOLO (You Only Look Once) object detection to perceive the game environment and make decisions accordingly.
 
-Behaviour Tree for this level:
+***Behaviour Tree for this level:***
 
 <img width="2738" height="688" alt="behavior_tree_based" src="https://github.com/user-attachments/assets/8d9343b5-18b3-4983-ac16-4a01091c0a8c" />
 
-Minecraft Environment for this level:
+***Minecraft Environment for this level:***
 
 https://github.com/user-attachments/assets/31a0e1be-5e8b-4d7f-99fe-687d278e4884
 
 
-SAUVC 2025 Competition Rounds Footage:
+***SAUVC 2025 Competition Rounds Footage:***
 
-
+https://github.com/user-attachments/assets/701894db-2eab-4a89-bbbf-bb3235ea5838
 
 **Key Files:**
 - `YOLO_BehaviourTree_Based_Auto.py` - Demonstrates YOLO + behaviour tree automation

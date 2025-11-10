@@ -59,9 +59,16 @@ Learn the fundamentals of automation through direct scripting. This approach inv
 ### 2. Behaviour Tree Based Automation (SAUVC Qualification Round)
 Advance to more sophisticated automation using behaviour trees. This approach provides better structure and modularity for complex decision-making processes.
 
+Behaviour Tree for this level:
+
 <img width="576" height="155" alt="behavior_tree_based" src="https://github.com/user-attachments/assets/db6adc3d-1165-46dc-8b4d-691dbd428b95" />
 
+Minecraft Environment for this level:
+
 https://github.com/user-attachments/assets/95f5334a-2764-4df0-9867-4677f162c2c7
+
+SAUVC 2025 Qualification Round Footage:
+
 
 **Key Files:**
 - `BehaviourTree_Based_Auto.py` - Demonstrates behaviour tree-based automation

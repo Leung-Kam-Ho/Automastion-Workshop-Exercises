@@ -67,16 +67,32 @@ class SwitchCameraBottom(py_trees.behaviour.Behaviour):
         return py_trees.common.Status.SUCCESS
 
 
+
+class Move(py_trees.behaviour.Behaviour):
+    def __init__(self, node : MinecraftOverrideConfig, twist : Twist):
+        super().__init__("Move")
+        self.node = node
+        self.twist = twist
+
+    def initialise(self):
+        self.node.send_twist_message(self.twist)
+
+    def update(self):
+        return py_trees.common.Status.SUCCESS
+
+
+
 class MoveForward(py_trees.behaviour.Behaviour):
-    def __init__(self, moc : MinecraftOverrideConfig, duration):
+    def __init__(self, node : MinecraftOverrideConfig, duration):
         super().__init__("MoveForward")
-        self.moc = moc
+        self.node = node
         self.duration = duration
 
     def initialise(self):
         twist = Twist()
         twist.linear.x = 1.0
-        self.moc.send_twist_message(twist)
+        self._move = Move(self.node, twist)
+        self._move.initialise()
         self._start_time = time()
 
     def update(self):
@@ -87,18 +103,20 @@ class MoveForward(py_trees.behaviour.Behaviour):
 
     def terminate(self, new_status):
         twist = Twist()
-        self.moc.send_twist_message(twist)
+        stop = Move(self.node, twist)
+        stop.initialise()
 
 
 class Stop(py_trees.behaviour.Behaviour):
-    def __init__(self, moc : MinecraftOverrideConfig, duration):
+    def __init__(self, node : MinecraftOverrideConfig, duration):
         super().__init__("Stop")
-        self.moc = moc
+        self.node = node
         self.duration = duration
 
     def initialise(self):
         twist = Twist()
-        self.moc.send_twist_message(twist)
+        self._move = Move(self.node, twist)
+        self._move.initialise()
         self._start_time = time()
 
     def update(self):

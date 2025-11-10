@@ -13,17 +13,17 @@ from custom_action import (
 
 if __name__ == "__main__":
     sleep(2)
-    moc = MinecraftOverrideConfig(override=True)
+    node = MinecraftOverrideConfig(override=True)
 
     root = py_trees.composites.Sequence("RootSequence", memory=True)
 
     # Demo Sequence
     root.add_children([
-        InitWorld(moc),
-        SwitchCameraBottom(moc),
-        SwitchCameraFront(moc),
-        MoveForward(moc, 10),
-        Stop(moc, 1),
+        InitWorld(node),
+        SwitchCameraBottom(node),
+        SwitchCameraFront(node),
+        MoveForward(node, 10),
+        Stop(node, 1),
     ])
     
     # Create the behaviour tree

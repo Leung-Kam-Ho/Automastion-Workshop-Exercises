@@ -9,17 +9,12 @@ from custom_action import (
     SwitchCameraFront,
     SwitchCameraBottom,
     MoveForward,
-    MoveBackward,
-    MoveLeft,
-    MoveRightForward,
     Stop,
-    SetpointLeft,
-    MoveBasedOnDetection
 )
 
 if __name__ == "__main__":
     sleep(2)
-    moc = MinecraftOverrideConfig(override=True)
+    node = MinecraftOverrideConfig(override=True)
 
     root = py_trees.composites.Sequence("RootSequence", memory=True)
 

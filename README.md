@@ -56,7 +56,7 @@ Learn the fundamentals of automation through direct scripting. This approach inv
 - **The arena environment is fixed**
 - **Use Behaviour Tree based logic to walk through the Gate, perform a 180 degrees U-turn, then pass through the gate one more time**
 
-### 2. Behaviour Tree Based Automation
+### 2. Behaviour Tree Based Automation (SAUVC Qualification Round)
 Advance to more sophisticated automation using behaviour trees. This approach provides better structure and modularity for complex decision-making processes.
 
 <img width="576" height="155" alt="behavior_tree_based" src="https://github.com/user-attachments/assets/db6adc3d-1165-46dc-8b4d-691dbd428b95" />

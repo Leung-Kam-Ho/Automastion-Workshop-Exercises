@@ -109,7 +109,7 @@ https://github.com/user-attachments/assets/701894db-2eab-4a89-bbbf-bb3235ea5838
 - **Integrate YOLO object detection into the behaviour tree**
 - **Implement additional action nodes and composite nodes**
 - **The arena environment may vary, requiring dynamic decision-making**
-- **Use YOLO + Behaviour Tree based logic to walk through the Gate, go to the blue pail (bucket), and hit all 3 colored poles in the target area**
+- **Use YOLO + Behaviour Tree based logic to walk through the Gate, go to the blue pail (bucket)**
 
 **Dependencies:**
 - `ultralytics` - YOLO implementation for object detection

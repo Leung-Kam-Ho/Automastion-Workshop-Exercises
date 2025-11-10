@@ -61,7 +61,7 @@ Learn the fundamentals of automation through direct scripting. This approach inv
 **Challenges:**
 - **Implement additional movement patterns**
 - **The arena environment is fixed**
-- **Use script based logic to walk through the Gate and reach the target area in a specific path**
+- **Use Behaviour Tree based logic to walk through the Gate, perform a 180 degrees U-turn, then pass through the gate one more time**
 
 ### 2. Behaviour Tree Based Automation
 Advance to more sophisticated automation using behaviour trees. This approach provides better structure and modularity for complex decision-making processes.
@@ -76,7 +76,7 @@ https://github.com/user-attachments/assets/95f5334a-2764-4df0-9867-4677f162c2c7
 **Challenges:**
 - **Implement additional action nodes and composite nodes**
 - **The arena environment is fixed**
-- **Use Behaviour Tree based logic to walk through the Gate and perform a 180 degrees U-turn, then pass through the gate one more time**
+- **Use Behaviour Tree based logic to walk through the Gate, perform a 180 degrees U-turn, then pass through the gate one more time**
 
 **Dependencies:**
 - `py-trees` - For behaviour tree logic

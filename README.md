@@ -69,6 +69,9 @@ https://github.com/user-attachments/assets/95f5334a-2764-4df0-9867-4677f162c2c7
 
 SAUVC 2025 Qualification Round Footage:
 
+https://github.com/user-attachments/assets/66ffdf3e-b37d-47a9-95f1-b71e3dbc51e9
+
+
 
 **Key Files:**
 - `BehaviourTree_Based_Auto.py` - Demonstrates behaviour tree-based automation
@@ -85,11 +88,16 @@ SAUVC 2025 Qualification Round Footage:
 ### 3. YOLO + Behaviour Tree Automation
 Combine computer vision with behaviour trees for intelligent automation. Use YOLO (You Only Look Once) object detection to perceive the game environment and make decisions accordingly.
 
+Behaviour Tree for this level:
+
 <img width="2738" height="688" alt="behavior_tree_based" src="https://github.com/user-attachments/assets/8d9343b5-18b3-4983-ac16-4a01091c0a8c" />
+
+Minecraft Environment for this level:
 
 https://github.com/user-attachments/assets/31a0e1be-5e8b-4d7f-99fe-687d278e4884
 
 
+SAUVC 2025 Competition Rounds Footage:
 
 
 

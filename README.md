@@ -86,6 +86,9 @@ Combine computer vision with behaviour trees for intelligent automation. Use YOL
 
 https://github.com/user-attachments/assets/31a0e1be-5e8b-4d7f-99fe-687d278e4884
 
+<img width="2738" height="688" alt="behavior_tree_based" src="https://github.com/user-attachments/assets/8d9343b5-18b3-4983-ac16-4a01091c0a8c" />
+
+
 
 **Key Files:**
 - `YOLO_BehaviourTree_Based_Auto.py` - Demonstrates YOLO + behaviour tree automation
